@@ -1,0 +1,130 @@
+/* Personal Profile Web Page Stylesheet */
+
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+}
+
+body {
+    background-color: #f4f7f6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Profile card / container layout */
+.profile-card {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.profile-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.profile-header .subtitle {
+    font-size: 1rem;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Sections */
+section {
+    margin-bottom: 1.5rem;
+}
+
+section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+}
+
+/* About Me paragraphs */
+.about p {
+    margin-bottom: 0.75rem;
+    color: #555555;
+    text-align: justify;
+}
+
+/* Skills list */
+.skills ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    color: #555555;
+}
+
+.skills li {
+    margin-bottom: 0.4rem;
+}
+
+/* Contact links */
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Footer */
+.profile-footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eeeeee;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 600px) {
+    .profile-card {
+        padding: 1.5rem;
+        border: none;
+        box-shadow: none;
+    }
+
+    .profile-header h1 {
+        font-size: 1.75rem;
+    }
+
+    section h2 {
+        font-size: 1.15rem;
+    }
+
+    body {
+        padding: 0.5rem;
+    }
+}
